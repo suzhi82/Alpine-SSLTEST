@@ -1,5 +1,5 @@
 FROM alpine:3.6
-RUN apk add --no-cache python3 nginx curl openssl socat bash &&\
+RUN apk add --no-cache python3 nginx curl openssl socat bash openrc &&\
     mkdir /run/nginx &&\
     touch /root/.bashrc &&\
     echo "export PS1='\h:\w\\\$ '" >> /root/.bashrc &&\

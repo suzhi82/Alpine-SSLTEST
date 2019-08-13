@@ -9,4 +9,4 @@ RUN apk add --no-cache python3 nginx curl openssl socat bash openrc &&\
     rc-update add nginx default
 VOLUME ["/tmp/sys/fs/cgroup","/sys/fs/cgroup"]
 WORKDIR /root
-CMD ["/bin/bash"]
+CMD ["/sbin/init"]
